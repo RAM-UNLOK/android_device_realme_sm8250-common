@@ -59,6 +59,9 @@ on fs
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
+    mkdir /mnt/vendor/persist/subsys 0770 root system
+    mkdir /mnt/vendor/persist/alarm 0770 system system
+    mkdir /mnt/vendor/persist/time 0770 system system
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
