@@ -53,4 +53,7 @@
 	<!-- Night Light FOD -->
     <bool name="disable_fod_night_light">true</bool>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+
 </resources>
