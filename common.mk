@@ -20,6 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Disable APEX compression
+# Keep this after including updatable_apex.mk
+PRODUCT_COMPRESSED_APEX := false
+
 # Inherit proprietary libraries
 $(call inherit-product, vendor/realme/sm8250-common/sm8250-common-vendor.mk)
 
