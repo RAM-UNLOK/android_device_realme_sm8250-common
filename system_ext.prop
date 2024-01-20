@@ -4,8 +4,7 @@ persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 
 # Display
-debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=0
+debug.sf.enable_hwc_vds=1
 persist.sys.brightness.low.gamma=true
 
 # CNE
@@ -19,7 +18,7 @@ ro.egl.blobcache.multifile=true
 ro.egl.blobcache.multifile_limit=33554432
 
 # GPS
-persist.backup.ntpServer=0.pool.ntp.org
+persist.backup.ntpServer="0.pool.ntp.org"
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -28,16 +27,27 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=3974386
+vendor.mm.enable.qcom_parser=4039922
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
 # Netmgr
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.mode=concurrent
 
 # Radio
@@ -48,14 +58,3 @@ persist.vendor.sensors.enable.mag_filter=true
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
-
-# Ram Management
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
