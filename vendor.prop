@@ -19,7 +19,6 @@ ro.vendor.audio.sdk.ssr=false
 vendor.audio_hal.period_size=192
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
 vendor.audio.tunnel.encode=false
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.track.enable=true
