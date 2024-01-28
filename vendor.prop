@@ -230,7 +230,7 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.enableadvancedscan=true
-ro.telephony.default_network=27,9
+ro.telephony.default_network=27,27
 
 # Sensors
 persist.vendor.sensors.sync_request=true
