@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
+    libOmxVenc \
     libstagefrighthw
 
 # Overlays
